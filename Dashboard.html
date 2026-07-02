@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>CuroNex | Inventory Dashboard</title>
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet"
+href="css/common.css">
+
+<link rel="stylesheet"
+href="css/dashboard.css">
+
+</head>
+
+<body>
+
+<!-- ===========================
+     TOP NAVBAR
+============================ -->
+
+<header class="top-navbar">
+
+<div class="logo-section">
+
+<div class="logo">
+
+<img src="assets/logo.png"
+alt="CuroNex Logo">
+
+</div>
+
+<div class="logo-text">
+
+<h2>CuroNex</h2>
+
+<p>Hospital Camp Management</p>
+
+</div>
+
+</div>
+
+<div class="navbar-search">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+placeholder="Search resources, transfers...">
+
+</div>
+
+<div class="navbar-right">
+
+<button class="icon-btn">
+
+<i class="fa-regular fa-bell"></i>
+
+<span class="badge">3</span>
+
+</button>
+
+<button class="icon-btn">
+
+<i class="fa-regular fa-envelope"></i>
+
+<span class="badge">5</span>
+
+</button>
+
+<div class="profile">
+
+<img src="https://i.pravatar.cc/100"
+alt="Profile">
+
+<div>
+
+<h4>Inventory Admin</h4>
+
+<p>Administrator</p>
+
+</div>
+
+<i class="fa-solid fa-angle-down"></i>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- ===========================
+     MAIN LAYOUT
+============================ -->
+
+<div class="layout">
+
+
+<!-- ===========================
+     SIDEBAR
+============================ -->
+
+<aside class="sidebar">
+
+<div class="sidebar-header">
+
+<h3>Inventory Module</h3>
+
+<p>Manage Hospital Resources</p>
+
+</div>
+
+<nav class="sidebar-menu">
+
+<a href="dashboard.html" class="active">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<span>Dashboard</span>
+
+</a>
+
+<a href="registration.html">
+
+<i class="fa-solid fa-plus-circle"></i>
+
+<span>Resource Registration</span>
+
+</a>
+
+<a href="availability.html">
+
+<i class="fa-solid fa-boxes-stacked"></i>
+
+<span>Resource Availability</span>
+
+</a>
+
+<a href="transfer-request.html">
+
+<i class="fa-solid fa-right-left"></i>
+
+<span>Transfer Request</span>
+
+</a>
+
+<a href="movement-tracking.html">
+
+<i class="fa-solid fa-truck-fast"></i>
+
+<span>Movement Tracking</span>
+
+</a>
+
+</nav>
+
+<div class="sidebar-footer">
+
+<div class="help-card">
+
+<i class="fa-solid fa-headset"></i>
+
+<h4>Support</h4>
+
+<p>
+
+Need help managing inventory?
+
+Contact the administrator.
+
+</p>
+
+<button>
+
+Contact Support
+
+</button>
+
+</div>
+
+<a href="#" class="logout">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+<span>Logout</span>
+
+</a>
+
+</div>
+
+</aside>
+
+<!-- ===========================
+     MAIN CONTENT
+============================ -->
+
+<main class="main-content">
+
+<div class="breadcrumb">
+
+<span>Inventory</span>
+
+<i class="fa-solid fa-angle-right"></i>
+
+<span class="current">
+
+Dashboard
+
+</span>
+
+</div>
+
+<div class="page-title">
+
+<h1>
+
+Inventory Dashboard
+
+</h1>
+
+<p>
+
+Monitor hospital inventory, stock availability,
+transfers and resource movement.
+
+</p>
+
+</div>
+
+<!-- ===========================
+     HERO SECTION
+============================ -->
+
+<section class="hero-section">
+
+    <div class="welcome-card">
+
+        <div>
+
+            <h2>
+
+                Welcome back, Inventory Administrator 👋
+
+            </h2>
+
+            <p>
+
+                Here's today's inventory overview. Monitor resources,
+                manage stock efficiently, and track transfers across
+                hospitals and medical camps.
+
+            </p>
+
+        </div>
+
+        <button class="primary-btn">
+
+            <i class="fa-solid fa-plus"></i>
+
+            Register Resource
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+     KPI CARDS
+============================ -->
+
+<section class="stats-grid">
+
+    <!-- Card 1 -->
+
+    <div class="stat-card">
+
+        <div class="stat-icon blue">
+
+            <i class="fa-solid fa-boxes-stacked"></i>
+
+        </div>
+
+        <div class="stat-content">
+
+            <h3>1,248</h3>
+
+            <p>Total Resources</p>
+
+            <span class="positive">
+
+                <i class="fa-solid fa-arrow-trend-up"></i>
+
+                +8% this month
+
+            </span>
+
+        </div>
+
+    </div>
+
+    <!-- Card 2 -->
+
+    <div class="stat-card">
+
+        <div class="stat-icon green">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+        </div>
+
+        <div class="stat-content">
+
+            <h3>1,108</h3>
+
+            <p>Available Resources</p>
+
+            <span class="positive">
+
+                Healthy Stock
+
+            </span>
+
+        </div>
+
+    </div>
+
+    <!-- Card 3 -->
+
+    <div class="stat-card">
+
+        <div class="stat-icon orange">
+
+            <i class="fa-solid fa-triangle-exclamation"></i>
+
+        </div>
+
+        <div class="stat-content">
+
+            <h3>23</h3>
+
+            <p>Low Stock Items</p>
+
+            <span class="warning">
+
+                Refill Required
+
+            </span>
+
+        </div>
+
+    </div>
+
+    <!-- Card 4 -->
+
+    <div class="stat-card">
+
+        <div class="stat-icon red">
+
+            <i class="fa-solid fa-clock"></i>
+
+        </div>
+
+        <div class="stat-content">
+
+            <h3>12</h3>
+
+            <p>Expiring Soon</p>
+
+            <span class="danger">
+
+                Within 30 Days
+
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+     QUICK ACTIONS
+============================ -->
+
+<section class="quick-actions">
+
+    <h2>
+
+        Quick Actions
+
+    </h2>
+
+    <div class="action-grid">
+
+        <button class="action-card">
+
+            <i class="fa-solid fa-plus-circle"></i>
+
+            <span>Register Resource</span>
+
+        </button>
+
+        <button class="action-card">
+
+            <i class="fa-solid fa-box-open"></i>
+
+            <span>Manage Inventory</span>
+
+        </button>
+
+        <button class="action-card">
+
+            <i class="fa-solid fa-right-left"></i>
+
+            <span>Transfer Resource</span>
+
+        </button>
+
+        <button class="action-card">
+
+            <i class="fa-solid fa-truck-fast"></i>
+
+            <span>Track Movement</span>
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+     DASHBOARD CONTENT
+============================ -->
+
+<div class="dashboard-grid">
+
+    <!-- ================= RECENT ACTIVITY ================= -->
+
+    <section class="dashboard-card">
+
+        <div class="card-header">
+
+            <h2>
+
+                <i class="fa-solid fa-clock-rotate-left"></i>
+
+                Recent Activities
+
+            </h2>
+
+            <a href="#">
+
+                View All
+
+            </a>
+
+        </div>
+
+        <div class="activity-list">
+
+            <div class="activity-item">
+
+                <div class="activity-icon success">
+
+                    <i class="fa-solid fa-circle-plus"></i>
+
+                </div>
+
+                <div>
+
+                    <h4>
+
+                        New Resource Added
+
+                    </h4>
+
+                    <p>
+
+                        500 Surgical Gloves added to Central Warehouse.
+
+                    </p>
+
+                    <small>
+
+                        10 minutes ago
+
+                    </small>
+
+                </div>
+
+            </div>
+
+            <div class="activity-item">
+
+                <div class="activity-icon warning">
+
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+                </div>
+
+                <div>
+
+                    <h4>
+
+                        Transfer Request Raised
+
+                    </h4>
+
+                    <p>
+
+                        Oxygen Cylinders requested by Camp Hospital.
+
+                    </p>
+
+                    <small>
+
+                        25 minutes ago
+
+                    </small>
+
+                </div>
+
+            </div>
+
+            <div class="activity-item">
+
+                <div class="activity-icon danger">
+
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+
+                </div>
+
+                <div>
+
+                    <h4>
+
+                        Low Stock Alert
+
+                    </h4>
+
+                    <p>
+
+                        Syringes reached critical stock level.
+
+                    </p>
+
+                    <small>
+
+                        1 hour ago
+
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= LOW STOCK TABLE ================= -->
+
+    <section class="dashboard-card">
+
+        <div class="card-header">
+
+            <h2>
+
+                <i class="fa-solid fa-box-open"></i>
+
+                Low Stock Resources
+
+            </h2>
+
+            <button class="small-btn">
+
+                Refill
+
+            </button>
+
+        </div>
+
+        <table class="inventory-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Resource</th>
+
+                    <th>Category</th>
+
+                    <th>Available</th>
+
+                    <th>Status</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>Surgical Gloves</td>
+
+                    <td>Consumables</td>
+
+                    <td>18</td>
+
+                    <td>
+
+                        <span class="badge warning">
+
+                            Low
+
+                        </span>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Oxygen Cylinder</td>
+
+                    <td>Equipment</td>
+
+                    <td>5</td>
+
+                    <td>
+
+                        <span class="badge danger">
+
+                            Critical
+
+                        </span>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Syringes</td>
+
+                    <td>Consumables</td>
+
+                    <td>12</td>
+
+                    <td>
+
+                        <span class="badge warning">
+
+                            Low
+
+                        </span>
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+</div>
+
+<!-- ================= PENDING TRANSFERS ================= -->
+
+<section class="dashboard-card">
+
+    <div class="card-header">
+
+        <h2>
+
+            <i class="fa-solid fa-truck-fast"></i>
+
+            Pending Transfer Requests
+
+        </h2>
+
+        <button class="small-btn">
+
+            View Requests
+
+        </button>
+
+    </div>
+
+    <table class="inventory-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Transfer ID</th>
+
+                <th>Resource</th>
+
+                <th>Source</th>
+
+                <th>Destination</th>
+
+                <th>Quantity</th>
+
+                <th>Status</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>TRF-1001</td>
+
+                <td>Oxygen Cylinders</td>
+
+                <td>City Hospital</td>
+
+                <td>Medical Camp A</td>
+
+                <td>20</td>
+
+                <td>
+
+                    <span class="badge pending">
+
+                        Pending
+
+                    </span>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>TRF-1002</td>
+
+                <td>Blood Bags</td>
+
+                <td>Central Warehouse</td>
+
+                <td>District Hospital</td>
+
+                <td>50</td>
+
+                <td>
+
+                    <span class="badge approved">
+
+                        Approved
+
+                    </span>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>TRF-1003</td>
+
+                <td>PPE Kits</td>
+
+                <td>Regional Store</td>
+
+                <td>Camp B</td>
+
+                <td>100</td>
+
+                <td>
+
+                    <span class="badge progress">
+
+                        In Transit
+
+                    </span>
+
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</section>
+
+
+<!-- ===========================
+     SYSTEM STATUS
+============================ -->
+
+<section class="system-status">
+
+    <div class="status-card">
+
+        <div class="status-header">
+
+            <h2>
+
+                <i class="fa-solid fa-server"></i>
+
+                System Status
+
+            </h2>
+
+        </div>
+
+        <div class="status-grid">
+
+            <div class="status-item">
+
+                <span class="status-dot online"></span>
+
+                <div>
+
+                    <h4>Inventory Database</h4>
+
+                    <p>Operational</p>
+
+                </div>
+
+            </div>
+
+            <div class="status-item">
+
+                <span class="status-dot online"></span>
+
+                <div>
+
+                    <h4>Transfer Module</h4>
+
+                    <p>Running Normally</p>
+
+                </div>
+
+            </div>
+
+            <div class="status-item">
+
+                <span class="status-dot warning"></span>
+
+                <div>
+
+                    <h4>Notification Service</h4>
+
+                    <p>Minor Delay</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+</div>
+
+<!-- ===========================
+     FOOTER
+============================ -->
+
+<footer class="footer">
+
+    <div>
+
+        © 2026 CuroNex | Hospital Camp Management System
+
+    </div>
+
+    <div>
+
+        Inventory Module v1.0
+
+    </div>
+
+</footer>
+
+<script src="js/common.js"></script>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
+
+
+
