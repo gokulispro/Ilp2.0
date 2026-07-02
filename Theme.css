@@ -1,0 +1,189 @@
+/* =====================================
+        CURONEX DESIGN SYSTEM v1.0
+===================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+
+/* =====================
+   BRAND COLORS
+===================== */
+
+--navbar:#0B3D91;
+
+--primary:#1976D2;
+
+--primary-hover:#1565C0;
+
+--selected:#E3F2FD;
+
+--background:#F8FAFC;
+
+/* =====================
+   SURFACES
+===================== */
+
+--card:#FFFFFF;
+
+--border:#D9E6F5;
+
+--input-border:#C9DDF2;
+
+/* =====================
+   TEXT
+===================== */
+
+--heading:#102A43;
+
+--primary-text:#0B3D91;
+
+--body:#4B5563;
+
+--secondary:#6B7280;
+
+/* =====================
+   STATUS
+===================== */
+
+--success:#2E7D32;
+
+--error:#D32F2F;
+
+--warning:#F59E0B;
+
+--info:#1976D2;
+
+/* =====================
+   BADGES
+===================== */
+
+--rating-bg:#E8F4FD;
+
+--rating:#1976D2;
+
+/* =====================
+   SHADOW
+===================== */
+
+--card-shadow:
+
+0 8px 24px rgba(0,0,0,.08);
+
+--card-hover:
+
+0 12px 30px rgba(0,0,0,.12);
+
+/* =====================
+   BORDER RADIUS
+===================== */
+
+--button-radius:14px;
+
+--card-radius:20px;
+
+--input-radius:16px;
+
+--small-radius:10px;
+
+/* =====================
+   SPACING
+===================== */
+
+--space-xs:4px;
+
+--space-sm:8px;
+
+--space-md:16px;
+
+--space-lg:24px;
+
+--space-xl:32px;
+
+--space-2xl:40px;
+
+}
+
+/* =====================================
+            RESET
+===================================== */
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+font-family:'Poppins',sans-serif;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+background:var(--background);
+
+color:var(--body);
+
+}
+
+/* =====================================
+        TYPOGRAPHY
+===================================== */
+
+h1{
+
+font-size:40px;
+
+font-weight:700;
+
+color:var(--heading);
+
+}
+
+h2{
+
+font-size:28px;
+
+font-weight:600;
+
+color:var(--heading);
+
+}
+
+h3{
+
+font-size:22px;
+
+font-weight:600;
+
+color:var(--heading);
+
+}
+
+p{
+
+font-size:16px;
+
+line-height:1.6;
+
+color:var(--body);
+
+}
+
+small{
+
+font-size:13px;
+
+color:var(--secondary);
+
+}
+
+
