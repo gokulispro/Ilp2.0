@@ -1,0 +1,743 @@
+registration.html 
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inventory Administrator Registration</title>
+
+    <link rel="stylesheet" href="registration.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <div class="logo">
+
+        <i class="fa-solid fa-heart-pulse"></i>
+
+        <div>
+
+            <h2>CuroNex</h2>
+
+            <p>Hospital Camp Management</p>
+
+        </div>
+
+    </div>
+
+    <nav>
+
+        <a href="#">About</a>
+
+        <a href="#">Contact</a>
+
+        <i class="fa-regular fa-bell"></i>
+
+        <div class="profile">
+
+            <img src="https://i.pravatar.cc/40" alt="">
+
+            <span>Inventory Admin</span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- ================= CONTAINER ================= -->
+
+<div class="container">
+
+<!-- ================= SIDEBAR ================= -->
+
+<aside>
+
+<div class="menu">
+
+<a class="active">
+
+<i class="fa-solid fa-user-plus"></i>
+
+<span>Registration</span>
+
+</a>
+
+<a>
+
+<i class="fa-solid fa-boxes-stacked"></i>
+
+<span>Inventory</span>
+
+</a>
+
+<a>
+
+<i class="fa-solid fa-circle-plus"></i>
+
+<span>Add Resource</span>
+
+</a>
+
+<a>
+
+<i class="fa-solid fa-right-left"></i>
+
+<span>Transfer Request</span>
+
+</a>
+
+<a>
+
+<i class="fa-solid fa-truck-fast"></i>
+
+<span>Resource Tracking</span>
+
+</a>
+
+</div>
+
+<div class="support">
+
+<i class="fa-solid fa-headset"></i>
+
+<h3>Need Help?</h3>
+
+<p>Contact Support Center</p>
+
+</div>
+
+</aside>
+
+<!-- ================= MAIN ================= -->
+
+<main>
+
+<div class="page-header">
+
+<h1>Inventory Administrator Registration</h1>
+
+<p>
+
+Register a new Inventory Administrator for Hospital Camp Management.
+
+</p>
+
+</div>
+
+<!-- Stepper -->
+
+<div class="stepper">
+
+<div class="step active">
+
+<div class="number">1</div>
+
+<span>Admin Details</span>
+
+</div>
+
+<div class="line"></div>
+
+<div class="step">
+
+<div class="number">2</div>
+
+<span>Organization</span>
+
+</div>
+
+<div class="line"></div>
+
+<div class="step">
+
+<div class="number">3</div>
+
+<span>Resources</span>
+
+</div>
+
+<div class="line"></div>
+
+<div class="step">
+
+<div class="number">4</div>
+
+<span>Contact</span>
+
+</div>
+
+<div class="line"></div>
+
+<div class="step">
+
+<div class="number">5</div>
+
+<span>Review</span>
+
+</div>
+
+</div>
+
+<!-- ================= CARD ================= -->
+
+<div class="card">
+
+<h2>
+
+<i class="fa-solid fa-user"></i>
+
+Admin Details
+
+</h2>
+
+<div class="form-grid">
+
+<!-- Row 1 -->
+
+<div class="input-group">
+
+    <label>Full Name</label>
+
+    <input type="text" placeholder="Enter full name">
+
+</div>
+
+<div class="input-group">
+
+    <label>Date of Birth</label>
+
+    <input type="date">
+
+</div>
+
+<!-- Row 2 -->
+
+<div class="input-group">
+
+    <label>Email Address</label>
+
+    <input type="email" placeholder="example@email.com">
+
+</div>
+
+<div class="input-group">
+
+    <label>Phone Number</label>
+
+    <input type="tel" placeholder="+91 XXXXX XXXXX">
+
+</div>
+
+<!-- Row 3 -->
+
+<div class="input-group">
+
+    <label>Password</label>
+
+    <input type="password" placeholder="Create password">
+
+</div>
+
+<div class="input-group">
+
+    <label>Confirm Password</label>
+
+    <input type="password" placeholder="Confirm password">
+
+</div>
+
+<!-- Row 4 -->
+
+<div class="input-group">
+
+    <label>Employee ID</label>
+
+    <input type="text" placeholder="EMP001">
+
+</div>
+
+<div class="input-group">
+
+    <label>Designation</label>
+
+    <select>
+
+        <option>Select Designation</option>
+
+        <option>Inventory Administrator</option>
+
+        <option>Inventory Manager</option>
+
+        <option>Hospital Administrator</option>
+
+        <option>Camp Coordinator</option>
+
+    </select>
+
+</div>
+
+<!-- Row 5 -->
+
+<div class="input-group full">
+
+    <label>Address</label>
+
+    <textarea rows="4"
+    placeholder="Enter residential address"></textarea>
+
+</div>
+
+<!-- Buttons -->
+
+<div class="button-area">
+
+    <button class="secondary">
+
+        Cancel
+
+    </button>
+
+    <button class="primary">
+
+        Continue
+
+        <i class="fa-solid fa-arrow-right"></i>
+
+    </button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= ORGANIZATION CARD ================= -->
+
+<div class="card">
+
+<h2>
+
+<i class="fa-solid fa-building"></i>
+
+Organization Details
+
+</h2>
+
+<div class="form-grid">
+<!-- Organization Name -->
+
+<div class="input-group">
+
+    <label>Organization Name</label>
+
+    <input type="text" placeholder="Enter Hospital / Camp Name">
+
+</div>
+
+<!-- Organization Type -->
+
+<div class="input-group">
+
+    <label>Organization Type</label>
+
+    <select>
+
+        <option>Select Type</option>
+
+        <option>Government Hospital</option>
+
+        <option>Private Hospital</option>
+
+        <option>Medical Camp</option>
+
+        <option>NGO</option>
+
+    </select>
+
+</div>
+
+<!-- Hospital ID -->
+
+<div class="input-group">
+
+    <label>Hospital / Camp ID</label>
+
+    <input type="text" placeholder="HCM001">
+
+</div>
+
+<!-- Registration Number -->
+
+<div class="input-group">
+
+    <label>Registration Number</label>
+
+    <input type="text" placeholder="Registration No.">
+
+</div>
+
+<!-- Address -->
+
+<div class="input-group full">
+
+    <label>Organization Address</label>
+
+    <textarea rows="4"
+    placeholder="Enter organization address"></textarea>
+
+</div>
+
+<!-- City -->
+
+<div class="input-group">
+
+    <label>City</label>
+
+    <input type="text">
+
+</div>
+
+<!-- State -->
+
+<div class="input-group">
+
+    <label>State</label>
+
+    <input type="text">
+
+</div>
+
+<!-- Pincode -->
+
+<div class="input-group">
+
+    <label>Pincode</label>
+
+    <input type="text">
+
+</div>
+
+<!-- Country -->
+
+<div class="input-group">
+
+    <label>Country</label>
+
+    <select>
+
+        <option>India</option>
+
+        <option>United States</option>
+
+        <option>United Kingdom</option>
+
+    </select>
+
+</div>
+
+<!-- Contact Person -->
+
+<div class="input-group">
+
+    <label>Contact Person</label>
+
+    <input type="text"
+    placeholder="Enter Contact Person">
+
+</div>
+
+<!-- Contact Number -->
+
+<div class="input-group">
+
+    <label>Emergency Contact</label>
+
+    <input type="tel"
+    placeholder="+91 XXXXX XXXXX">
+
+</div>
+
+<!-- Email -->
+
+<div class="input-group full">
+
+    <label>Official Email</label>
+
+    <input type="email"
+    placeholder="hospital@email.com">
+
+</div>
+
+<!-- Buttons -->
+
+<div class="button-area">
+
+    <button class="secondary">
+
+        Previous
+
+    </button>
+
+    <button class="primary">
+
+        Continue
+
+        <i class="fa-solid fa-arrow-right"></i>
+
+    </button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= RESOURCE TYPE CARD ================= -->
+
+<div class="card">
+
+<h2>
+
+<i class="fa-solid fa-boxes-stacked"></i>
+
+Resource Categories Managed
+
+</h2>
+
+<div class="resource-grid">
+
+<div class="resource-card">
+
+<i class="fa-solid fa-pills"></i>
+
+<h3>Medicines</h3>
+
+<p>Manage pharmaceutical inventory.</p>
+
+</div>
+
+<div class="resource-card">
+
+<i class="fa-solid fa-stethoscope"></i>
+
+<h3>Medical Equipment</h3>
+
+<p>Monitor equipment availability.</p>
+
+</div>
+
+<div class="resource-card">
+
+<i class="fa-solid fa-droplet"></i>
+
+<h3>Blood Units</h3>
+
+<p>Manage blood bank inventory.</p>
+
+</div>
+
+<div class="resource-card">
+
+<i class="fa-solid fa-syringe"></i>
+
+<h3>Consumables</h3>
+
+<p>Track disposable medical supplies.</p>
+
+</div>
+
+</div>
+
+<div class="button-area">
+
+<button class="secondary">
+
+Previous
+
+</button>
+
+<button class="primary">
+
+Continue
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</button>
+
+</div>
+
+</div>
+
+<!-- ================= CONTACT INFORMATION ================= -->
+
+<div class="card">
+
+    <h2>
+        <i class="fa-solid fa-address-book"></i>
+        Contact Information
+    </h2>
+
+    <div class="form-grid">
+
+        <div class="input-group">
+
+            <label>Primary Contact Name</label>
+
+            <input type="text" placeholder="Enter Name">
+
+        </div>
+
+        <div class="input-group">
+
+            <label>Designation</label>
+
+            <input type="text" placeholder="Medical Officer">
+
+        </div>
+
+        <div class="input-group">
+
+            <label>Contact Number</label>
+
+            <input type="tel" placeholder="+91 XXXXX XXXXX">
+
+        </div>
+
+        <div class="input-group">
+
+            <label>Email Address</label>
+
+            <input type="email" placeholder="contact@hospital.com">
+
+        </div>
+
+        <div class="input-group full">
+
+            <label>Emergency Contact Details</label>
+
+            <textarea rows="4"
+            placeholder="Emergency contact information"></textarea>
+
+        </div>
+
+    </div>
+
+    <div class="button-area">
+
+        <button class="secondary">
+            Previous
+        </button>
+
+        <button class="primary">
+            Continue
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ================= REVIEW ================= -->
+
+<div class="card">
+
+    <h2>
+
+        <i class="fa-solid fa-circle-check"></i>
+
+        Review & Submit
+
+    </h2>
+
+    <div class="summary">
+
+        <div class="summary-box">
+
+            <h4>Administrator</h4>
+
+            <p>John Doe</p>
+
+        </div>
+
+        <div class="summary-box">
+
+            <h4>Organization</h4>
+
+            <p>ABC Multi Speciality Hospital</p>
+
+        </div>
+
+        <div class="summary-box">
+
+            <h4>Resources Managed</h4>
+
+            <p>Medicines, Equipment, Blood Units</p>
+
+        </div>
+
+        <div class="summary-box">
+
+            <h4>Contact</h4>
+
+            <p>+91 XXXXX XXXXX</p>
+
+        </div>
+
+    </div>
+
+    <div class="agreement">
+
+        <input type="checkbox">
+
+        <span>
+
+            I certify that all the information provided above is correct.
+
+        </span>
+
+    </div>
+
+    <div class="button-area">
+
+        <button class="secondary">
+
+            Previous
+
+        </button>
+
+        <button class="submit-btn">
+
+            <i class="fa-solid fa-user-plus"></i>
+
+            Register Administrator
+
+        </button>
+
+    </div>
+
+</div>
+
+</main>
+
+</div>
+
+</body>
+
+</html>
