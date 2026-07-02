@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Add Resource</title>
+
+<link rel="stylesheet"
+href="add-resource.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="logo">
+
+<i class="fa-solid fa-heart-pulse"></i>
+
+<div>
+
+<h2>CuroNex</h2>
+
+<p>Hospital Camp Management</p>
+
+</div>
+
+</div>
+
+<div class="header-right">
+
+<i class="fa-regular fa-bell"></i>
+
+<div class="profile">
+
+<img src="https://i.pravatar.cc/45">
+
+<div>
+
+<h4>Inventory Admin</h4>
+
+<p>Administrator</p>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- ================= LAYOUT ================= -->
+
+<div class="container">
+
+<!-- ================= SIDEBAR ================= -->
+
+<aside>
+
+<div class="menu">
+
+<a href="inventory.html">
+
+<i class="fa-solid fa-house"></i>
+
+<span>Dashboard</span>
+
+</a>
+
+<a class="active">
+
+<i class="fa-solid fa-circle-plus"></i>
+
+<span>Add Resource</span>
+
+</a>
+
+<a>
+
+<i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+<span>Transfer Request</span>
+
+</a>
+
+<a>
+
+<i class="fa-solid fa-truck-fast"></i>
+
+<span>Resource Tracking</span>
+
+</a>
+
+</div>
+
+</aside>
+
+<!-- ================= MAIN ================= -->
+
+<main>
+
+<div class="page-header">
+
+<h1>Add New Resource</h1>
+
+<p>
+
+Register a new medical resource into the inventory.
+
+</p>
+
+</div>
+
+<div class="resource-card">
+
+<form id="resourceForm">
+
+<div class="form-grid">
+
+<!-- ================= Resource Name ================= -->
+
+<div class="input-group">
+
+<label for="resourceName">
+
+Resource Name
+
+</label>
+
+<input
+type="text"
+id="resourceName"
+name="resourceName"
+placeholder="Enter Resource Name"
+required>
+
+</div>
+
+<!-- ================= Category ================= -->
+
+<div class="input-group">
+
+<label for="category">
+
+Category
+
+</label>
+
+<select
+id="category"
+name="category">
+
+<option value="">Select Category</option>
+
+<option>Medicine</option>
+
+<option>Equipment</option>
+
+<option>Blood Unit</option>
+
+<option>Consumables</option>
+
+</select>
+
+</div>
+
+<!-- ================= Quantity ================= -->
+
+<div class="input-group">
+
+<label for="quantity">
+
+Quantity
+
+</label>
+
+<input
+type="number"
+id="quantity"
+name="quantity"
+placeholder="Enter Quantity">
+
+</div>
+
+<!-- ================= Unit ================= -->
+
+<div class="input-group">
+
+<label for="unit">
+
+Unit
+
+</label>
+
+<select
+id="unit"
+name="unit">
+
+<option>Select Unit</option>
+
+<option>Boxes</option>
+
+<option>Bottles</option>
+
+<option>Pieces</option>
+
+<option>Packets</option>
+
+<option>Units</option>
+
+</select>
+
+</div>
+
+<!-- ================= Supplier ================= -->
+
+<div class="input-group">
+
+<label for="supplier">
+
+Supplier Name
+
+</label>
+
+<input
+type="text"
+id="supplier"
+name="supplier"
+placeholder="Supplier Name">
+
+</div>
+
+<!-- ================= Expiry ================= -->
+
+<div class="input-group">
+
+<label for="expiryDate">
+
+Expiry Date
+
+</label>
+
+<input
+type="date"
+id="expiryDate"
+name="expiryDate">
+
+</div>
+
+<!-- ================= Hospital ================= -->
+
+<div class="input-group">
+
+<label for="hospital">
+
+Hospital / Camp
+
+</label>
+
+<select
+id="hospital"
+name="hospital">
+
+<option>Select Hospital</option>
+
+<option>Government Hospital</option>
+
+<option>Private Hospital</option>
+
+<option>Medical Camp A</option>
+
+<option>Medical Camp B</option>
+
+</select>
+
+</div>
+
+<!-- ================= Storage ================= -->
+
+<div class="input-group">
+
+<label for="storageLocation">
+
+Storage Location
+
+</label>
+
+<input
+type="text"
+id="storageLocation"
+name="storageLocation"
+placeholder="Warehouse / Room No">
+
+</div>
+
+<!-- ================= Description ================= -->
+
+<div class="input-group full">
+
+<label for="description">
+
+Description
+
+</label>
+
+<textarea
+id="description"
+name="description"
+rows="5"
+placeholder="Enter Resource Description"></textarea>
+
+</div>
+
+<!-- ================= Resource Status ================= -->
+
+<div class="input-group">
+
+<label for="resourceStatus">
+
+Resource Status
+
+</label>
+
+<select
+id="resourceStatus"
+name="resourceStatus">
+
+<option value="">Select Status</option>
+
+<option>Available</option>
+
+<option>Low Stock</option>
+
+<option>Out of Stock</option>
+
+</select>
+
+</div>
+
+<!-- ================= Priority ================= -->
+
+<div class="input-group">
+
+<label for="priority">
+
+Priority Level
+
+</label>
+
+<select
+id="priority"
+name="priority">
+
+<option value="">Select Priority</option>
+
+<option>High</option>
+
+<option>Medium</option>
+
+<option>Low</option>
+
+</select>
+
+</div>
+
+<!-- ================= Batch Number ================= -->
+
+<div class="input-group">
+
+<label for="batchNumber">
+
+Batch Number
+
+</label>
+
+<input
+type="text"
+id="batchNumber"
+name="batchNumber"
+placeholder="Batch Number">
+
+</div>
+
+<!-- ================= Manufacturer ================= -->
+
+<div class="input-group">
+
+<label for="manufacturer">
+
+Manufacturer
+
+</label>
+
+<input
+type="text"
+id="manufacturer"
+name="manufacturer"
+placeholder="Manufacturer Name">
+
+</div>
+
+<!-- ================= Resource Image ================= -->
+
+<div class="input-group full">
+
+<label for="resourceImage">
+
+Upload Resource Image
+
+</label>
+
+<input
+type="file"
+id="resourceImage"
+name="resourceImage"
+accept="image/*">
+
+</div>
+
+<!-- ================= Notes ================= -->
+
+<div class="input-group full">
+
+<label for="notes">
+
+Additional Notes
+
+</label>
+
+<textarea
+id="notes"
+name="notes"
+rows="4"
+placeholder="Enter additional notes..."></textarea>
+
+</div>
+
+</div>
+
+<!-- ================= Summary ================= -->
+
+<div class="summary-card">
+
+<h3>
+
+<i class="fa-solid fa-circle-info"></i>
+
+Resource Summary
+
+</h3>
+
+<div class="summary-grid">
+
+<div>
+
+<span>Category</span>
+
+<p id="summaryCategory">Medicine</p>
+
+</div>
+
+<div>
+
+<span>Location</span>
+
+<p id="summaryLocation">Government Hospital</p>
+
+</div>
+
+<div>
+
+<span>Status</span>
+
+<p id="summaryStatus">Available</p>
+
+</div>
+
+<div>
+
+<span>Priority</span>
+
+<p id="summaryPriority">Medium</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= Buttons ================= -->
+
+<div class="button-area">
+
+<button
+type="reset"
+class="secondary"
+id="resetBtn">
+
+<i class="fa-solid fa-rotate-left"></i>
+
+Reset
+
+</button>
+
+<button
+type="submit"
+class="primary"
+id="saveResourceBtn">
+
+<i class="fa-solid fa-floppy-disk"></i>
+
+Save Resource
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</main>
+
+</div>
+
+<script src="add-resource.js"></script>
+
+</body>
+
+</html>
+
+
